@@ -20,4 +20,20 @@ In the **Remote** and **Local** variations, no note appears, and the **New Note*
 
 I'm hoping that I'm just doing something wrong in loading the `WKWebView`, but it's possible that this just isn't supported.
 
+Here's my code for the **Remote** variation:
+
+    WKWebViewConfiguration *config = [WKWebViewConfiguration new];
+    
+    config.websiteDataStore = [WKWebsiteDataStore defaultDataStore];
+    
+    self.webView = [[WKWebView alloc] initWithFrame:self.container.frame configuration:config];
+    self.webView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+    
+    [self.container addSubview:self.webView];
+
+    NSURL *url = [NSURL URLWithString:@"https://webkit.org/demos/sticky-notes/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [self.webView loadRequest:request];
+
 Any assistance much appreciated!
