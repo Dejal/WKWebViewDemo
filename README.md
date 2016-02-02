@@ -6,11 +6,11 @@ This project is a Mac app that shows a window with some buttons and a `WKWebView
 
 The three buttons show three variations of the same page: the [Sticky Notes WebKit demo](https://webkit.org/demos/sticky-notes/):
 
-**Remote** loads the [Sticky Notes WebKit demo](https://webkit.org/demos/sticky-notes/) page in the `WKWebView`.
+- **Remote** loads the [Sticky Notes WebKit demo](https://webkit.org/demos/sticky-notes/) page in the `WKWebView`.
 
-**Local** loads the same content from a copy in the app bundle.
+- **Local** loads the same content from a copy in the app bundle.
 
-**Safari** loads the [Sticky Notes WebKit demo](https://webkit.org/demos/sticky-notes/) in your browser.
+- **Safari** loads the [Sticky Notes WebKit demo](https://webkit.org/demos/sticky-notes/) in your browser.
 
 The first two do not work; the latter does.
 
