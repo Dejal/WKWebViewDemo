@@ -1,5 +1,9 @@
 # WKWebViewDemo
 
+> *Update: It turned out that while the local storage mechanism I was using does work in Safari and not `WKWebView`, it was easier than expected: just use the `localStorage` JavaScript variable.*
+
+-----
+
 I am trying to get local storage working with `WKWebView`.
 
 This project is a Mac app that shows a window with some buttons and a `WKWebView`.
