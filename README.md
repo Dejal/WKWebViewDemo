@@ -2,6 +2,8 @@
 
 > *Update: It turned out that while the local storage mechanism I was using does work in Safari and not `WKWebView`, it was easier than expected: just use the `localStorage` JavaScript variable.*
 
+> *I'm leaving this project as a useful testbed for `WKWebView` usage.*
+
 -----
 
 I am trying to get local storage working with `WKWebView`.
@@ -40,4 +42,4 @@ Here's my code for the **Remote** variation:
     
     [self.webView loadRequest:request];
 
-Any assistance much appreciated!
+Any assistance much appreciated!  *No longer needed.*
